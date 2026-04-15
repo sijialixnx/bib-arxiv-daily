@@ -1,9 +1,9 @@
 arxiv:
   categories:
-    - nucl-th
-    - nucl-ex
-    - hep-ph
-    - hep-th
+    - terahertz
+    - nonlinear phononics
+    - cond-mat.mtrl-sci
+    - optics
   max_candidates: 100
 
 embedding:
@@ -15,7 +15,7 @@ ranking:
   max_results: 15
 
 email:
-  subject_prefix: "[arXiv Nuclear]"
+  subject_prefix: "[arXiv]"
   include_pdf_links: true
   send_empty_email: true
 
