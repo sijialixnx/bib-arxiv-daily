@@ -1,9 +1,10 @@
 arxiv:
   categories:
-    - terahertz
-    - nonlinear_phononics
+    
     - cond-mat.mtrl-sci
-    - optics
+    - physics.optics
+    - cond-mat.supr-con
+   
   max_candidates: 100
 
 embedding:
