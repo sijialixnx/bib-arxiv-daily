@@ -118,7 +118,7 @@ class ArxivFetcher:
         sort_order = getattr(getattr(arxiv_module, "SortOrder", None), "Descending", None)
         search_kwargs = dict(
             query=query,
-            max_results=self.max_candidates,
+            max_results=30,
         )
         if sort_criterion is not None:
             search_kwargs["sort_by"] = sort_criterion
