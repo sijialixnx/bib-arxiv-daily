@@ -78,11 +78,11 @@ class ArxivFetcher:
         client = arxiv_module.Client(num_retries=5, delay_seconds=3)
         candidates: list[CandidatePaper] = []
 
-        for batch in chunked(unique_ids, 20):
+        for batch in chunked(unique_ids, 5):
             search = arxiv_module.Search(id_list=batch)
             for result in client.results(search):
                 candidates.append(self._convert_result(result))
-
+            time.sleep(5) 
         candidates.sort(key=self._published_sort_key, reverse=True)
         fetch_stats = ArxivFetchStats(
             rss_new_count=len(paper_ids),
