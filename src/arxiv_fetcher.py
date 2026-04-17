@@ -75,7 +75,7 @@ class ArxivFetcher:
             )
 
         arxiv_module = self._get_arxiv_module()
-        client = arxiv_module.Client(num_retries=5, delay_seconds=3)
+        client = arxiv_module.Client(num_retries=5, delay_seconds=6)
         candidates: list[CandidatePaper] = []
 
         for batch in chunked(unique_ids, 5):
