@@ -1,5 +1,5 @@
 arxiv>=2.2.0
-bibtexparser>=1.4.4
+bibtexparser==1.4.4
 feedparser>=6.0.11
 numpy>=1.26.0
 PyYAML>=6.0.1
